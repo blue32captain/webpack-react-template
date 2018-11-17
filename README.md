@@ -1,1 +1,1 @@
-# dashboard
+# webpack-react-tempalte
