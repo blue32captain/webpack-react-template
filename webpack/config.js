@@ -3,6 +3,13 @@ import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import AppConfigPlugin from 'app-config/webpack'
 import config from 'app-config'
+import rulesMap from './rules'
+
+
+const rules = Object.keys(rulesMap)
+  .map((k) => rulesMap[k])
+  .map((rule) => Array.isArray(rule) ? rule : (rule.default || rule[config.env]))
+  .reduce((result, rule) => result.concat(rule), []);
 
 
 const globals = {
@@ -13,7 +20,6 @@ const globals = {
   __CONFIG__: JSON.stringify(config),
 }
 
-
 const webpackConfig = {
   entry: config.paths.src('index.js'),
 
@@ -23,13 +29,7 @@ const webpackConfig = {
   },
 
   module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-      }
-    ]
+    rules,
   },
 
   node: {

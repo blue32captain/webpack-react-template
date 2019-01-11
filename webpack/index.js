@@ -7,7 +7,7 @@ import production from './production'
 const envConfig = ({
   'development': development,
   'production': production,
-})[config.env]
+})[config.env];
 
 
 export default envConfig(common)
