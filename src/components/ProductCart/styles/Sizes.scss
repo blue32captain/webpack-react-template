@@ -1,0 +1,17 @@
+.block {
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.title {
+  flex: 0 0 100%;
+  margin: 0 0 2rem 0;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}

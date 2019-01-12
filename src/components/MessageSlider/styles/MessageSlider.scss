@@ -1,0 +1,17 @@
+.slider {
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  padding-top: 65px;
+  color: #000000;
+
+  & p {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0;
+
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}

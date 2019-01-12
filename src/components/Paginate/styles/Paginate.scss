@@ -1,0 +1,26 @@
+.container {
+  list-style: none;
+  display: flex;
+}
+
+.list {
+  margin: 0 0.8rem;
+}
+
+.item {
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #ddd;
+  transition: 0.1s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+  cursor: pointer;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+.active {
+  font-weight: bold;
+  color: #000000;
+}

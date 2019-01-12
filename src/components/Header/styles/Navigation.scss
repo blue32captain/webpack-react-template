@@ -1,0 +1,43 @@
+.nav {
+  display: block;
+}
+
+.list {
+  text-transform: uppercase;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.item {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+
+  padding: 12px 24px;
+  cursor: pointer;
+
+  &:hover {
+    & span:before {
+      transform: scaleX(1);
+    }
+  }
+
+  & span {
+    position: relative;
+    padding: 0 4px;
+  }
+
+  & span:before {
+    display: block;
+    content: '';
+    border-bottom: 5px solid #000000;
+    width: 100%;
+    bottom: -25px;
+    left: 0;
+    position: absolute;
+    transition: 0.2s ease-in;
+    transform: scaleX(0);
+  }
+}

@@ -1,0 +1,13 @@
+.title {
+  margin: 0;
+  cursor: pointer;
+
+  & a {
+    list-style: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,39 @@
+.button {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+
+  display: inline-block;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+
+  width: 145px;
+  height: 4.5rem;
+  padding: 0 0.8rem;
+  border: 0;
+
+  font-size: 1.3rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.025rem;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+
+  transition: 0.1s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+
+  &:hover {
+    background: #ddd;
+    color: #000;
+  }
+}
+
+.white {
+  background: #ffffff;
+  color: #000000;
+
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+}

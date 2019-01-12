@@ -1,0 +1,58 @@
+.figure {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    & .img {
+      opacity: 0;
+    }
+
+    & .secondImg {
+      opacity: 1;
+    }
+
+    & .block {
+      opacity: 1;
+    }
+  }
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+}
+
+.img {
+  opacity: 1;
+}
+
+.secondImg {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.block {
+  z-index: 2;
+  opacity: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgba(0,0,0,0.7);
+}

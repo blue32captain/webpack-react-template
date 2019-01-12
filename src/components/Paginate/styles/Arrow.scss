@@ -1,0 +1,15 @@
+.arrow {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+.revers {
+  transform: rotate(180deg);
+}
