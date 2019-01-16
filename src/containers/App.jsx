@@ -12,7 +12,7 @@ const App = ({ children }) => (
   <Fragment>
     <Header />
     <MessageSlider />
-    {/*<Paginate />*/}
+    <Paginate />
     <main>
       {children}
       <ReleaseSection />
