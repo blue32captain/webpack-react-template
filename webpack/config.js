@@ -23,7 +23,7 @@ const globals = {
 const webpackConfig = {
   entry: [
     config.paths.src('index.js'),
-    'webpack-hot-middleware/client?path=http://localhost:9001/__webpack_hmr&timeout=10000&reload=true',
+    config.paths.webpack('webpack-hot-middleware/client'),
   ],
 
   output: {
