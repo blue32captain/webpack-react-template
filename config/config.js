@@ -9,7 +9,7 @@ const config = {
     base:     (file = '') => path.join(basePath, file),
     src:      (file = '') => path.join(basePath, 'src', file),
     client:   (file = '') => path.join(basePath, 'client', file),
-    webpack:  (file = '') => path.join(file, `?path=http://${config.http.host}:${config.http.port}/__webpack_hmr&timeout=10000&reload=true`)
+    webpack:  (file = '') => path.join(file, `?path=/__webpack_hmr&reload=true`)
   },
 
   publicPath: '/',
