@@ -57,7 +57,7 @@ const webpackConfig = {
     new AppConfigPlugin(),
     new webpack.DefinePlugin(globals),
     new webpack.NoEmitOnErrorsPlugin(),
-    new HtmlWebpackPlugin({template: config.paths.client('index.html') }),
+    new HtmlWebpackPlugin({ template: config.paths.client('index.html') }),
     new webpack.ContextReplacementPlugin(
       /\.\/locale$/,
       'empty-module',
@@ -65,6 +65,6 @@ const webpackConfig = {
       /js$/
     ),
   ]
-}
+};
 
 export default webpackConfig
