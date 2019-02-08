@@ -3,8 +3,8 @@ import 'scss/app.scss'
 
 import { Button } from 'components/controls'
 import {
-  MessageSlider, Section, Header, ReleaseSection,
-  Footer, Paginate,
+  MessageSlider, Section, Header,
+  ReleaseSection, Footer, Paginate,
 } from 'components'
 
 
