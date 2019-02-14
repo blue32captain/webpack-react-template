@@ -8,7 +8,7 @@ import { App } from 'containers/App'
 const routers = (
   <Switch>
     <Route exact path="/" component={() => <Section right />}/>
-    <Route exact path="/collections" component={() => null}/>
+    <Route exact path="/collections" component={App}/>
   </Switch>
 );
 
