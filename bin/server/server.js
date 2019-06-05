@@ -9,7 +9,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware'
 import webpackConfig from '../../webpack'
 
 
-const port      = 9001;
+const port      = 9002;
 const app       = express();
 const compiler  = webpack(webpackConfig);
 const debug     = _debug('app:bin:server');
